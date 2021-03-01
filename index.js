@@ -4,9 +4,11 @@ $(function() {
       $(this).toggleClass('active');
 
        if ($(this).hasClass('active')) {
-           $('.globalMenuSp').addClass('active');
+          //  $('.globalMenuSp').addClass('active');
+          $('.globalMenuSp').fadeIn(600)
        } else {
-           $('.globalMenuSp').removeClass('active');
+          //  $('.globalMenuSp').removeClass('active');
+          $('.globalMenuSp').fadeOut(500)
        }
    });
  });
@@ -29,5 +31,7 @@ $(function() {
 }
 
 $(function() {
-   setInterval( "slideSwitch()", 4000 );
+   setInterval( "slideSwitch()",3000 );
 });
+
+// For more check out zachsaucier.com
